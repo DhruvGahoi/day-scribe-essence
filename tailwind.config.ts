@@ -18,6 +18,18 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'heading': ['Instrument Serif', 'serif'],
+				'body': ['Manrope', 'system-ui', 'sans-serif'],
+			},
+			fontSize: {
+				'heading-xl': ['5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }], // 80px
+				'heading-lg': ['4rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }], // 64px
+				'heading-md': ['2rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }], // 32px
+				'subheading': ['1.5rem', { lineHeight: '1.3', letterSpacing: '-0.01em' }], // 24px
+				'body-lg': ['1rem', { lineHeight: '1.5' }], // 16px
+				'body': ['0.875rem', { lineHeight: '1.5' }], // 14px
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +73,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom diary colors
+				diary: {
+					primary: 'hsl(var(--diary-primary))',
+					secondary: 'hsl(var(--diary-secondary))',
+					accent: 'hsl(var(--diary-accent))',
+					surface: 'hsl(var(--diary-surface))',
+					'surface-elevated': 'hsl(var(--diary-surface-elevated))',
+					neutral: 'hsl(var(--diary-neutral))',
 				}
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'elevated': 'var(--shadow-elevated)',
+				'floating': 'var(--shadow-floating)',
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-surface': 'var(--gradient-surface)',
+				'gradient-accent': 'var(--gradient-accent)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
